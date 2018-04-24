@@ -52,17 +52,8 @@ public class HolidayAdapter extends ArrayAdapter<Holidays> {
 
         tvName.setText(currentHol.getName());
         tvDate.setText(currentHol.getDate());
-        for(int j=0; j<holidays.size(); j++){
-            if(holidays.get(j).getName().equals("New Year's Day")){
-                ivType.setImageResource(R.drawable.newyear);
-            }else if(holidays.get(j).getName().equals("Labour Day")){
-                ivType.setImageResource(R.drawable.labourday);
-            }else if(holidays.get(j).getName().equals("Chinese New Year")){
-                ivType.setImageResource(R.drawable.cny);
-            }else if(holidays.get(j).getName().equals("Good Friday")){
-                ivType.setImageResource(R.drawable.goodfriday);
-            }
-        }
+        ivType.setImageResource(currentHol.getImg());
+
         // Return the nicely done up View to the ListView
         return rowView;
     }

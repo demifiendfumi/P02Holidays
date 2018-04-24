@@ -35,11 +35,11 @@ public class Main2Activity extends AppCompatActivity {
         tv_title.setText(types);
 
         if(tv_title.getText().equals("Secular")) {
-            holidays.add(new Holidays( "New Year's Day", "1 Jan 2017"));
-            holidays.add(new Holidays( "Labour Day", "1 May 2017"));
+            holidays.add(new Holidays( "New Year's Day", "1 Jan 2017",R.drawable.newyear));
+            holidays.add(new Holidays( "Labour Day", "1 May 2017",R.drawable.labourday));
         }else if(tv_title.getText().equals("Ethnic & Religion")) {
-            holidays.add(new Holidays( "Chinese New Year", "28-29 Jan 2017"));
-            holidays.add(new Holidays( "Good Friday", "14 April 2017"));
+            holidays.add(new Holidays( "Chinese New Year", "28-29 Jan 2017",R.drawable.cny));
+            holidays.add(new Holidays( "Good Friday", "14 April 2017",R.drawable.goodfriday));
         }
         aa = new HolidayAdapter(this, R.layout.row2, holidays);
         lvH.setAdapter(aa);
