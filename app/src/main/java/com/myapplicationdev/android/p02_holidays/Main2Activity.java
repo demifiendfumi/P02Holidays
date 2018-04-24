@@ -39,10 +39,11 @@ public class Main2Activity extends AppCompatActivity {
             holidays.add(new Holidays( "Labour Day", "1 May 2017"));
         }else if(tv_title.getText().equals("Ethnic & Religion")) {
             holidays.add(new Holidays( "Chinese New Year", "28-29 Jan 2017"));
-            holidays.add(new Holidays( "Labour Day", "14 April 2017"));
+            holidays.add(new Holidays( "Good Friday", "14 April 2017"));
         }
         aa = new HolidayAdapter(this, R.layout.row2, holidays);
         lvH.setAdapter(aa);
+
 
         lvH.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
